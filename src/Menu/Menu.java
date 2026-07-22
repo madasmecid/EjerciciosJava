@@ -4,11 +4,12 @@ import java.util.Scanner;
 public class Menu {
 
 	public static void main(String[] args) {
-		// menu con metodos de a poco
+		// menu con metodos de a poco probando
 		
 		Scanner teclado = new Scanner(System.in);
 		
 		int opcions = -1;
+		int sumar = 0;
 		
 		menu();
 		
@@ -16,8 +17,16 @@ public class Menu {
 		
 		switch(opcions) {
 		case 1:
-			int resultado = 7+5;
-			System.out.println(resultado);
+			System.out.println("Ingrese el primer numero a sumar: ");
+			int num1 = teclado.nextInt();
+			System.out.println("Ingrese el segundo numero para sumar: ");
+			int num2 = teclado.nextInt();
+			sumar = suma(num1, num2);
+			System.out.println("el resultado de la suma es: " +sumar);
+			break;
+		case 2:
+			int resta = 9-4;
+			System.out.println("El resultado de la resta es " + resta);
 		}
 		
 
@@ -42,6 +51,10 @@ public class Menu {
 			return opcion;
 		}
 		return -1;
+	}
+	
+	static int suma(int num1, int num2) {
+		return num1 + num2;
 	}
 
 }
