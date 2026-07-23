@@ -27,6 +27,11 @@ public class Menu {
 		case 2:
 			int resta = 9-4;
 			System.out.println("El resultado de la resta es " + resta);
+		case 3:
+			int multi = 4 * 6;
+			
+			System.out.println("EL resultado de la multiplicaicon es: "  + multi);
+			
 		}
 		
 
