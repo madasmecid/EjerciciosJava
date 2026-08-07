@@ -1,2 +1,6 @@
 bin/
 *.class
+/JavaApplication2/nbproject/private/
+/JavaApplication2/build/
+/JavaProject1/nbproject/private/
+/JavaProject1/build/
